@@ -1,6 +1,6 @@
 import styles from './Banner.module.css';
 import Image from 'next/image';
-import Background from '../../public/images/cover_home.png';
+import Background from '../../public/images/team.jpg';
 
 export default function Banner() {
   return (
