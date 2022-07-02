@@ -1,5 +1,7 @@
 import Head from 'next/head';
+import PageWrapper from '../components/PageWrapper/PageWrapper';
 import ContactBar from '../components/ContactBar/ContactBar';
+import Banner from '../components/Banner/Banner';
 
 export default function Home() {
   return (
@@ -18,7 +20,10 @@ export default function Home() {
           content='BoomBalloonLV | Custom Balloons Decoration in Las Vegas | Boomballoonlv offers custom balloons decoration for wedding, birthday, babyshower, graduation, corporate events in Las Vegas and Henderson, Nevada.'
         />
       </Head>
-      <ContactBar />
+      <PageWrapper>
+        <ContactBar />
+        <Banner />
+      </PageWrapper>
     </>
   );
 }

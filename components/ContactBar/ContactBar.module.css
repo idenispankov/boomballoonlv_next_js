@@ -1,6 +1,14 @@
-/* .contact_bar {
-  
-} */
+.contact_bar {
+  width: 100%;
+  background-color: #313131;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.logo__image {
+  width: 30px;
+  height: 30px;
+}
 
 .contact_bar__container {
   background-color: #313131;
@@ -26,14 +34,6 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
-  /* width: 100%; */
-  /* background: #313131; */
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  /* padding: 20px; */
-  /* position: fixed; */
-  /* top: 70px; */
 }
 
 .text {
@@ -45,7 +45,56 @@
 }
 
 .icon {
-  /* color: #fff; */
   width: 30px;
   height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact_bar__container {
+    padding: 40px;
+  }
+  .logo__container {
+    padding-bottom: 40px;
+  }
+  .icons__container {
+    padding-top: 40px;
+  }
+  .logo__image {
+    width: 35px;
+    height: 35px;
+  }
+  .logo__text {
+    margin-left: 30px;
+    font-size: 32px;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact_bar__container {
+    padding: 80px;
+    /* max-width: 1024px; */
+    margin: 0 auto;
+  }
+  .logo__container {
+    padding-bottom: 80px;
+  }
+  .icons__container {
+    padding-top: 80px;
+  }
+  .logo__image {
+    width: 50px;
+    height: 50px;
+  }
+  .logo__text {
+    margin-left: 40px;
+    font-size: 48px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
 }

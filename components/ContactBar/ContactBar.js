@@ -1,6 +1,6 @@
 import styles from './ContactBar.module.css';
 import Image from 'next/image';
-import Logo from '../../images/logo.svg';
+import Logo from '../../images/logo.png';
 import { AiOutlineMail } from 'react-icons/ai';
 import { AiOutlinePhone } from 'react-icons/ai';
 import { FiFacebook } from 'react-icons/fi';
@@ -12,7 +12,9 @@ function ContactBar() {
     <div className={styles.contact_bar}>
       <div className={styles.contact_bar__container}>
         <div className={styles.logo__container}>
-          <Image src={Logo} width={50} height={50} alt='logo' />
+          <div className={styles.logo__image}>
+            <Image src={Logo} alt='logo' />
+          </div>
           <h2 className={styles.logo__text}>BoomBalloonLV</h2>
         </div>
         <div className={styles.icons__container}>
